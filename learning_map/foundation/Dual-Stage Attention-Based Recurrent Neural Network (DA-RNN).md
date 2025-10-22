@@ -113,38 +113,7 @@ c_t = \sum_i \beta_t^i h_i
 **EMAT — Enhanced Multi-Aspect Transformer for Financial Time Series Forecasting (2025)**  
 🔗 [Read on MDPI](https://www.mdpi.com/1099-4300/27/10/1029)
 
-### 🔍 Why EMAT is the next step:
-| Feature | Description |
-|----------|--------------|
-| **Architecture** | Replaces LSTM backbone with a **Transformer-based encoder**. |
-| **Innovation** | Introduces *Multi-Aspect Attention* (temporal, trend, volatility dimensions). |
-| **Advancement** | Moves from “dual-stage” attention to **multi-dimensional** attention. |
-| **Impact** | Handles complex dependencies beyond time and features, ideal for financial data. |
 
-### 🧩 Relationship to DA-RNN
-| From DA-RNN | To EMAT |
-|--------------|----------|
-| Input + Temporal attention | Multi-Aspect attention (trend, volatility, regime) |
-| RNN backbone | Transformer backbone |
-| Partial interpretability | Full attention-based explainability |
-| Moderate improvement | Significant leap in flexibility and generalization |
-
-### 💡 Why it matters for your research
-- Perfect alignment with **factor-based + ML** modeling in FX/CTA domains.  
-- Enables you to explore *multi-regime* or *volatility-driven* trading strategies.  
-- Conceptually connects your current “factor weighting + attention” project to the state-of-the-art Transformer field.
-
----
-
-## 9️⃣ Next Steps for Implementation
-
-1. 📘 Read and summarize EMAT’s multi-aspect attention equations.  
-2. 🧪 Replace DA-RNN’s LSTM encoder with a Transformer encoder block.  
-3. 🔍 Experiment on factor-based datasets (FX, CTA, equities).  
-4. 📊 Compare stability and drawdown between DA-RNN vs EMAT.  
-5. 📝 Publish results in your `quant_research/transformer_experiments` folder.
-
----
 
 ## 10️⃣ References
 
