@@ -1,0 +1,5 @@
+import yfinance as yf
+gc = yf.download("GC=F", start="2015-01-01", interval="1d")
+hg = yf.download("HG=F", start="2015-01-01", interval="1d")
+# 15min（近几周）
+gc_15m = yf.download("GC=F", period="60d", interval="15m")
