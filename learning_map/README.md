@@ -1,3 +1,5 @@
+backtrader structure：https://github.com/Ckend/pythondict-quant?tab=readme-ov-file
+
 # External Research Resources
 
 ## 📘 Quant Reading Lists
