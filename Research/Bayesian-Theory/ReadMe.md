@@ -1,9 +1,9 @@
-🎓 Bayesian Theory (W1–W10): 
+🎓 Bayesian Theory (W1–W10)
 
 This course builds the computational engine from static inference to dynamic sampling. Mastering W8–W10 (MCMC) is critical for high-dimensional financial models.
 
 I. Theory & Foundational Inference (W1–W5)
-
+Week	Core Topic	Quant Example
 W1	Bayes’ Theorem	Asset returns: update beliefs via 
 𝑝
 (
@@ -26,8 +26,8 @@ W1	Bayes’ Theorem	Asset returns: update beliefs via
 p(θ∣y)∝p(y∣θ)p(θ).
 W2–W4	Priors & Hierarchical Modeling	Use hierarchical models (Sec. 2.5.2) for shrinkage to avoid small-sample overfitting across assets.
 W5	Posterior Analysis	Use HPDI (Sec. 3.2.2) as a conservative threshold for stop-loss or risk gating.
-
 II. Computational Challenges & the MCMC Core (W6–W10)
+
 When analytic solutions fail, sampling is essential.
 
 Week	Technique	Mechanism	Finance Use
@@ -61,10 +61,10 @@ t
 	​
 
 	Typically Gibbs (with MH steps) for latent vol and parameters.
-Markov Switching (MSM)	Bull/bear regime changes	Gibbs/MH for transition probs and state-specific parameters.
+Markov Switching (MSM)	Bull/bear regime changes	Gibbs/MH for transition probabilities and state-specific parameters.
 Bayesian Deep Learning (BDL)	Uncertainty for Transformers/forecasts	MC Dropout / BNNs for posterior predictive intervals.
 2) Tools & Fusion: PPLs, TDA, and SMC
 Tool/Technique	Role	Goal
 Probability Programming (PyMC / Stan / Pyro)	Automate NUTS/MH/Gibbs; avoid hand-coding samplers	Faster, safer model iteration.
-TDA Integration	Extract topological features (e.g., asset-network structure)	Use systemic-risk covariates inside dynamic Bayes models.
+TDA Integration	Extract topological features (e.g., asset-network structure)	Use systemic-risk covariates inside dynamic Bayesian models.
 Particle Filtering (SMC)	Online inference for non-linear, non-Gaussian state-space models	Real-time, recursive parameter/state estimation; complements MCMC.
