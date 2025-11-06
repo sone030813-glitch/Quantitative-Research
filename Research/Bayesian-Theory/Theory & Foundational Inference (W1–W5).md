@@ -1,6 +1,6 @@
 ### week1 Bayes_basics
 ## Bayes Theorem and Examples
-# 1.5.1 'Discrete case'
+# 1.5.1, Discrete case
 
 $$
 \Pr(X = x_i \mid Y = y_j)
