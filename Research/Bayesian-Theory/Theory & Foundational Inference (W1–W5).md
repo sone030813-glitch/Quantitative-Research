@@ -1,18 +1,45 @@
-### week1 Bayes_basics
+# week1 Bayes_basics
 ## Bayes Theorem and Examples
-# 1.5.1, Discrete case
+### 1.5.1, Discrete case
 
 $$
 \Pr(X = x_i \mid Y = y_j)
 = \frac{\Pr(X = x_i, Y = y_j)}{\Pr(Y = y_j)}.
 $$
 
-which can be rewritten as
+which can be rewritten as (Law of joint_probability)
 
 $$
 \Pr(X = x_i \mid Y = y_j)
 = \frac{\Pr(Y = y_j \mid X = x_i)\,\Pr(X = x_i)}{\Pr(Y = y_j)}.
+\tag{1.2}
 $$
+
+which can be rewritten as (Law of total_probability)
+
+$$
+\Pr(X = x_i \mid Y = y_j)
+= \frac{\Pr(Y = y_j \mid X = x_i)\,\Pr(X = x_i)}
+{\displaystyle \sum_{k} \Pr(Y = y_j \mid X = x_k)\,\Pr(X = x_k)}.
+\tag{1.3}
+$$
+
+### 1.5.2 Continuous case
+
+$$
+f(x\mid y)
+= \frac{f(x,y)}{g(y)}
+= \frac{g(y\mid x)\,f(x)}{\displaystyle \int g(y\mid x)\,f(x)\,dx}.
+\tag{1.4}
+$$
+**Joint density surface** \(f_{X,Y}(x,y)\) can be viewed as a “surface” standing over the \((x,y)\)-plane, where the **height** represents the density.
+
+**Numerator** \(f_{X,Y}(x,y)\): fixing both \(x\) and \(y\) means you take the height at a single point on that surface (just a number). Since we want the **conditional density at a specific \(x\)**, no integration is needed in the numerator.
+
+**Denominator** \(f_Y(y)=\displaystyle\int f_{X,Y}(x,y)\,dx\): fixing \(y\) means you sweep along the \(x\)-direction and add up the area under that slice curve (a one-dimensional integral). More precisely,
+\[
+\Pr\big(Y\in[y,y+dy]\big)\ \approx\ \Big(\int f_{X,Y}(x,y)\,dx\Big)\,dy\ =\ f_Y(y)\,dy.
+\]
 
 先验与后验预测
 
