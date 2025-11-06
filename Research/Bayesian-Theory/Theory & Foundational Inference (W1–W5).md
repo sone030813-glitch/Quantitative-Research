@@ -28,15 +28,20 @@ $$
 f(x\mid y)
 = \frac{f(x,y)}{g(y)}
 = \frac{g(y\mid x)\,f(x)}{\displaystyle \int g(y\mid x)\,f(x)\,dx}.
-\tag{1.4}
 $$
 
+**Joint density surface** $f_{X,Y}(x,y)$ can be viewed as a “surface” standing over the $(x,y)$-plane, where the **height** represents the density.
 
-**Joint density surface** \(f_{X,Y}(x,y)\) can be viewed as a “surface” standing over the \((x,y)\)-plane, where the **height** represents the density.
+**Numerator** $f_{X,Y}(x,y)$: fixing both $x$ and $y$ means you take the height at a single point on that surface (just a number). Since we want the **conditional density at a specific $x$**, no integration is needed in the numerator.
 
-**Numerator** \(f_{X,Y}(x,y)\): fixing both \(x\) and \(y\) means you take the height at a single point on that surface (just a number). Since we want the **conditional density at a specific \(x\)**, no integration is needed in the numerator.
+**Denominator** $f_Y(y)=\int f_{X,Y}(x,y)\,dx$: fixing $y$ means you sweep along the $x$-direction and add up the area under that slice curve (a one-dimensional integral). More precisely,
 
-**Denominator** \(f_Y(y)=\displaystyle\int f_{X,Y}(x,y)\,dx\): fixing \(y\) means you sweep along the \(x\)-direction and add up the area under that slice curve (a one-dimensional integral). More precisely,\[\Pr\big(Y\in[y,y+dy]\big)\ \approx\ \Big(\int f_{X,Y}(x,y)\,dx\Big)\,dy\ =\f_Y(y)\,dy.\]
+$$
+\Pr\!\big(Y\in[y,y+dy]\big)
+\approx \Big(\int f_{X,Y}(x,y)\,dx\Big)\,dy
+= f_Y(y)\,dy.
+$$
+
 
 先验与后验预测
 
