@@ -12,7 +12,6 @@ which can be rewritten as (Law of joint_probability)
 $$
 \Pr(X = x_i \mid Y = y_j)
 = \frac{\Pr(Y = y_j \mid X = x_i)\,\Pr(X = x_i)}{\Pr(Y = y_j)}.
-\tag{1.2}
 $$
 
 which can be rewritten as (Law of total_probability)
@@ -21,7 +20,6 @@ $$
 \Pr(X = x_i \mid Y = y_j)
 = \frac{\Pr(Y = y_j \mid X = x_i)\,\Pr(X = x_i)}
 {\displaystyle \sum_{k} \Pr(Y = y_j \mid X = x_k)\,\Pr(X = x_k)}.
-\tag{1.3}
 $$
 
 ### 1.5.2 Continuous case
@@ -36,10 +34,7 @@ $$
 
 **Numerator** \(f_{X,Y}(x,y)\): fixing both \(x\) and \(y\) means you take the height at a single point on that surface (just a number). Since we want the **conditional density at a specific \(x\)**, no integration is needed in the numerator.
 
-**Denominator** \(f_Y(y)=\displaystyle\int f_{X,Y}(x,y)\,dx\): fixing \(y\) means you sweep along the \(x\)-direction and add up the area under that slice curve (a one-dimensional integral). More precisely,
-\[
-\Pr\big(Y\in[y,y+dy]\big)\ \approx\ \Big(\int f_{X,Y}(x,y)\,dx\Big)\,dy\ =\ f_Y(y)\,dy.
-\]
+**Denominator** \(f_Y(y)=\displaystyle\int f_{X,Y}(x,y)\,dx\): fixing \(y\) means you sweep along the \(x\)-direction and add up the area under that slice curve (a one-dimensional integral). More precisely,\[\Pr\big(Y\in[y,y+dy]\big)\ \approx\ \Big(\int f_{X,Y}(x,y)\,dx\Big)\,dy\ =\f_Y(y)\,dy.\]
 
 先验与后验预测
 
