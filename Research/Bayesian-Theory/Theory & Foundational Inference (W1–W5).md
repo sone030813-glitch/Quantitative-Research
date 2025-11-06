@@ -10,7 +10,7 @@ which can be rewritten as
 $$
 \Pr(X = x_i \mid Y = y_j)
 = \frac{\Pr(Y = yj mid\X = x_j)\Pr(X = x_i)}{\Pr(Y = y_j)}
-%%
+$$
 、先验与后验预测
 
 ## week2-week4
