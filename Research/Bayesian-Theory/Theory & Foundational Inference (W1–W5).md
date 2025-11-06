@@ -30,6 +30,8 @@ f(x\mid y)
 = \frac{g(y\mid x)\,f(x)}{\displaystyle \int g(y\mid x)\,f(x)\,dx}.
 \tag{1.4}
 $$
+
+
 **Joint density surface** \(f_{X,Y}(x,y)\) can be viewed as a “surface” standing over the \((x,y)\)-plane, where the **height** represents the density.
 
 **Numerator** \(f_{X,Y}(x,y)\): fixing both \(x\) and \(y\) means you take the height at a single point on that surface (just a number). Since we want the **conditional density at a specific \(x\)**, no integration is needed in the numerator.
