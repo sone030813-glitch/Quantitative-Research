@@ -36,11 +36,7 @@ $$
 
 **Denominator** $f_Y(y)=\int f_{X,Y}(x,y)\,dx$: fixing $y$ means you sweep along the $x$-direction and add up the area under that slice curve (a one-dimensional integral). More precisely,
 
-$$
-\Pr\!\big(Y\in[y,y+dy]\big)
-\approx \Big(\int f_{X,Y}(x,y)\,dx\Big)\,dy
-= f_Y(y)\,dy.
-$$
+
 
 
 先验与后验预测
