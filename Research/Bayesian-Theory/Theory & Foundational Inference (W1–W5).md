@@ -1,7 +1,16 @@
 ### week1 Bayes_basics
-##Bayes Theorem and Examples
-#1.5.1 'Discrete case'
-Pr(X = xi|Y = yi) = Pr(X = xi，Y= yi)/Pr(Y = yi)
+## Bayes Theorem and Examples
+# 1.5.1 'Discrete case'
+$$
+\Pr(X = x_i \mid Y = y_j)
+= \frac{\Pr(X = x_i, Y = y_j)}{\Pr(Y = y_j)}.
+$$
+
+which can be rewritten as
+$$
+\Pr(X = x_i \mid Y = y_j)
+= \frac{\Pr(Y = yj mid\X = x_j)\Pr(X = x_i)}{\Pr(Y = y_j)}
+%%
 、先验与后验预测
 
 ## week2-week4
