@@ -39,14 +39,11 @@ $$
 
 
 
-## Prior and Posterior (Discrete & Continuous)
-
-> Labels: **Prior**, **Likelihood**, **Evidence**, **Posterior**  
-> Minimal formulas + one discrete numeric example + one continuous conjugate example.
+# Prior and Posterior (Discrete & Continuous)
 
 ---
 
-### A) Discrete
+## A) Discrete
 
 Setup: three mutually exclusive and exhaustive events $A_1, A_2, A_3$; observed event $B$.
 
@@ -60,7 +57,7 @@ $$
 P(B\mid A_1)=0.8,\quad P(B\mid A_2)=0.3,\quad P(B\mid A_3)=0.1.
 $$
 
-**1) [Evidence] Law of total probability**
+**1) [Evidence] — Law of total probability**
 $$
 P(B)=\sum_{i=1}^{3} P(B\mid A_i)\,P(A_i)
 =0.8\times0.2+0.3\times0.5+0.1\times0.3
@@ -79,7 +76,7 @@ $$
 
 ---
 
-### B) Continuous (Conjugate: Exponential–Gamma)
+## B) Continuous (Conjugate: Exponential–Gamma)
 
 Data: independent samples $y_1,\dots,y_n$ given rate $\lambda>0$.
 
@@ -113,6 +110,7 @@ Let $\alpha=2,\ \beta=1$, observe $n=3$ with $\sum y_i=6$. Then
 $$
 \lambda\mid y \sim \mathrm{Gamma}(2+3,\ 1+6)=\mathrm{Gamma}(5,7).
 $$
+
 
 ---
 
